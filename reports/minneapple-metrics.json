@@ -1,0 +1,160 @@
+{
+  "protocol": {
+    "seed": 2041,
+    "epochs": 6,
+    "batch_size": 4,
+    "threads": 4,
+    "design": "within_official_test_release_by_orchard_row",
+    "input_width": 288,
+    "input_height": 512,
+    "train_images": 30,
+    "calibration_images": 12,
+    "target_stride": 4,
+    "colliding_training_centers": 0,
+    "coco_sha256": "788ad37e3ccd3928a096e8493dc9956ef0792509b14ec3f3df5f280ebeafd0d7",
+    "archive_md5_verified": false,
+    "threshold": 0.25,
+    "color_red_margin": 35,
+    "color_min_area": 25
+  },
+  "training_loss": [
+    1.908379316329956,
+    1.350346639752388,
+    1.1270048022270203,
+    0.9987769648432732,
+    0.9286510646343231,
+    0.8643539026379585
+  ],
+  "calibration": {
+    "images": 12,
+    "apples": 300,
+    "learned": {
+      "mae": 5.25,
+      "bias": 2.75,
+      "rmse": 7.029698902987714
+    },
+    "color": {
+      "mae": 5.666666666666667,
+      "bias": 1.5,
+      "rmse": 7.05927286151579
+    }
+  },
+  "test": {
+    "images": 24,
+    "apples": 1253,
+    "learned": {
+      "mae": 16.583333333333332,
+      "bias": -11.583333333333334,
+      "rmse": 21.872737978283986
+    },
+    "color": {
+      "mae": 17.291666666666668,
+      "bias": -9.791666666666666,
+      "rmse": 20.241253255007045
+    }
+  },
+  "by_row_side": {
+    "dataset3_back": {
+      "images": 8,
+      "apples": 448,
+      "learned": {
+        "mae": 25.625,
+        "bias": -25.625,
+        "rmse": 28.326224598417628
+      },
+      "color": {
+        "mae": 22.5,
+        "bias": -22.5,
+        "rmse": 24.63736998950984
+      }
+    },
+    "dataset3_front": {
+      "images": 8,
+      "apples": 382,
+      "learned": {
+        "mae": 6,
+        "bias": -2,
+        "rmse": 7.745966692414834
+      },
+      "color": {
+        "mae": 14,
+        "bias": -10,
+        "rmse": 17.277152543170995
+      }
+    },
+    "dataset4_front": {
+      "images": 8,
+      "apples": 423,
+      "learned": {
+        "mae": 18.125,
+        "bias": -7.125,
+        "rmse": 23.93480728980286
+      },
+      "color": {
+        "mae": 15.375,
+        "bias": 3.125,
+        "rmse": 17.98958031750602
+      }
+    }
+  },
+  "by_size": {
+    "median_below_1024_px2": {
+      "images": 16,
+      "apples": 868,
+      "learned": {
+        "mae": 20.0625,
+        "bias": -14.5625,
+        "rmse": 25.503676205598282
+      },
+      "color": {
+        "mae": 18.25,
+        "bias": -9,
+        "rmse": 21.011901389450696
+      }
+    },
+    "other": {
+      "images": 8,
+      "apples": 385,
+      "learned": {
+        "mae": 9.625,
+        "bias": -5.625,
+        "rmse": 11.59202311936963
+      },
+      "color": {
+        "mae": 15.375,
+        "bias": -11.375,
+        "rmse": 18.604434955139055
+      }
+    }
+  },
+  "by_overlap": {
+    "any_box_iou_above_0_1": {
+      "images": 22,
+      "apples": 1117,
+      "learned": {
+        "mae": 14.136363636363637,
+        "bias": -8.681818181818182,
+        "rmse": 18.60229702336393
+      },
+      "color": {
+        "mae": 16.636363636363637,
+        "bias": -8.454545454545455,
+        "rmse": 19.76222291508358
+      }
+    },
+    "other": {
+      "images": 2,
+      "apples": 136,
+      "learned": {
+        "mae": 43.5,
+        "bias": -43.5,
+        "rmse": 43.982951242498494
+      },
+      "color": {
+        "mae": 24.5,
+        "bias": -24.5,
+        "rmse": 24.9098374141623
+      }
+    }
+  }
+}
